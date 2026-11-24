@@ -1,82 +1,55 @@
-
 using UnityEngine;
-using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
     [Header("Paneles")]
     public GameObject mainMenu;
     public GameObject tutorialPanel;
-    public GameObject settingsPanel;
     public GameObject creditsPanel;
+    public GameObject gameSettingsButton;
 
     [Header("Audio")]
     public AudioSource backgroundMusic;
-    public Slider volumeSlider;
 
     void Start()
     {
-        MostrarMenuPrincipal();
+        VolverMenu();
 
-        if (backgroundMusic != null && volumeSlider != null)
+        if (backgroundMusic != null &&
+            !backgroundMusic.isPlaying)
         {
-            volumeSlider.SetValueWithoutNotify(backgroundMusic.volume);
+            backgroundMusic.Play();
         }
     }
 
-    // Cierra todos los paneles
-    public void CerrarPaneles()
-    {
-        mainMenu.SetActive(false);
-        tutorialPanel.SetActive(false);
-        settingsPanel.SetActive(false);
-        creditsPanel.SetActive(false);
-    }
-
-    // Abre el menu principal
-    public void MostrarMenuPrincipal()
-    {
-        CerrarPaneles();
-        mainMenu.SetActive(true);
-    }
-
-    // Boton de jugar
     public void Jugar()
     {
-        CerrarPaneles();
+        mainMenu.SetActive(false);
         tutorialPanel.SetActive(true);
+        creditsPanel.SetActive(false);
+        gameSettingsButton.SetActive(false);
     }
 
-    // Cierra el tutorial e inicia la experiencia AR
     public void CerrarTutorial()
     {
-        CerrarPaneles();
+        tutorialPanel.SetActive(false);
+        gameSettingsButton.SetActive(true);
     }
 
-    // Abre los ajustes
-    public void AbrirAjustes()
-    {
-        CerrarPaneles();
-        settingsPanel.SetActive(true);
-    }
-
-    // Abre los creditos
     public void AbrirCreditos()
     {
-        CerrarPaneles();
+        mainMenu.SetActive(false);
         creditsPanel.SetActive(true);
     }
 
-    // Modifica el volumen de la musica
-    public void CambiarVolumen(float valor)
+    public void VolverMenu()
     {
-        if (backgroundMusic != null)
-        {
-            backgroundMusic.volume = valor;
-        }
+        mainMenu.SetActive(true);
+        tutorialPanel.SetActive(false);
+        creditsPanel.SetActive(false);
+        gameSettingsButton.SetActive(false);
     }
 
-    // Cierra la aplicacion
     public void Salir()
     {
         Application.Quit();

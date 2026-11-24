@@ -151,7 +151,6 @@ struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF;
 struct Scrollbar_t7CDC9B956698D9385A11E4C12964CD51477072C3;
 struct ShaderPropAnimator_t768B23A41FC3CFB5B3C2501C2411B4DEBA296906;
 struct SkewTextExample_t23E1D8362105119C600703D984514C02617441D1;
-struct Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F;
 struct String_t;
 struct StringBuilder_t;
 struct TMP_Dropdown_t73B37BFDA0D005451C7B750938AFB1748E5EA504;
@@ -5936,10 +5935,9 @@ struct MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16  : public MonoBehav
 {
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___mainMenu;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tutorialPanel;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___settingsPanel;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___creditsPanel;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameSettingsButton;
 	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___backgroundMusic;
-	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___volumeSlider;
 };
 struct ObjectSpin_tE4A801A6C63FE0773DE2FD043571CB80CC9F194B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -6708,9 +6706,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12030[7] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12031[3] = 
 {
 	static_cast<int32_t>(offsetof(Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295, ___multiplier)),static_cast<int32_t>(offsetof(Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295, ___originalSize)),static_cast<int32_t>(offsetof(Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295, ___bigSize)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12032[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12032[5] = 
 {
-	static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___mainMenu)),static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___tutorialPanel)),static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___settingsPanel)),static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___creditsPanel)),static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___backgroundMusic)),static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___volumeSlider)),};
+	static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___mainMenu)),static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___tutorialPanel)),static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___creditsPanel)),static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___gameSettingsButton)),static_cast<int32_t>(offsetof(MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16, ___backgroundMusic)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12033[6] = 
 {
 	static_cast<int32_t>(offsetof(PausarSistemaSolar_tA05D419FBC72796FAFE83551A8A3202F2AAA76F7, ___arCamera)),static_cast<int32_t>(offsetof(PausarSistemaSolar_tA05D419FBC72796FAFE83551A8A3202F2AAA76F7, ___planeFinder)),static_cast<int32_t>(offsetof(PausarSistemaSolar_tA05D419FBC72796FAFE83551A8A3202F2AAA76F7, ___rotaciones)),static_cast<int32_t>(offsetof(PausarSistemaSolar_tA05D419FBC72796FAFE83551A8A3202F2AAA76F7, ___detenido)),static_cast<int32_t>(offsetof(PausarSistemaSolar_tA05D419FBC72796FAFE83551A8A3202F2AAA76F7, ___colocado)),static_cast<int32_t>(offsetof(PausarSistemaSolar_tA05D419FBC72796FAFE83551A8A3202F2AAA76F7, ___aceptarToqueDesde)),};

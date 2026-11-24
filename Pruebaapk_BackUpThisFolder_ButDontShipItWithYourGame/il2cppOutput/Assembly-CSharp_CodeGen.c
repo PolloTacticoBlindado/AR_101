@@ -17,13 +17,10 @@ extern void Interaction_Awake_m638A13C8CCC2562207264642D02FB3B842A9F172 (void);
 extern void Interaction_OnPointerClick_mF94FDF6560F6175B42E2EEBC147A9E856010E065 (void);
 extern void Interaction__ctor_mAA056B1A5909FD56D69AF98AC67AC0F72E10F50E (void);
 extern void MenuManager_Start_m58062825AA9A256E42311B4A4833E7425589BBDF (void);
-extern void MenuManager_CerrarPaneles_m937339DA16640DDD54D8026A1CC1B802F07E4BC1 (void);
-extern void MenuManager_MostrarMenuPrincipal_m956EFF9E7D890E172C24C58938C24C4F528EFB07 (void);
 extern void MenuManager_Jugar_m517285D898868D29DE2E6914073D6EA379E4B961 (void);
 extern void MenuManager_CerrarTutorial_m9EFB0E08743B4B538160FDBFF8F0BD1B06261D37 (void);
-extern void MenuManager_AbrirAjustes_m4A9851038CDC0FD8E8179FE0B8E6060F1FE0C6D4 (void);
 extern void MenuManager_AbrirCreditos_mA8CDD48B314FF92D30AD6532E1CFC46CBCC78044 (void);
-extern void MenuManager_CambiarVolumen_m634CD140A79C3B4D05BE1BF8A110242E29FD22DB (void);
+extern void MenuManager_VolverMenu_m76955AB11A2E1633EA5FF5F96B5DD21F95EAC7DB (void);
 extern void MenuManager_Salir_m58A7C2A6FEE253CCDB470D478B6EAD1A7C889B7B (void);
 extern void MenuManager__ctor_m07A22DFDD90E3164393F8BDE06DAEF5AFA786CF2 (void);
 extern void PausarSistemaSolar_Awake_m7BC520AF4DE02414BEC8468D279F7B9AC1CC601D (void);
@@ -309,7 +306,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[302] = 
+static Il2CppMethodPointer s_methodPointers[299] = 
 {
 	HuevoInteractivo_Start_m3E732F0BE81FE9AB9E5B4A4760F46510B1CC08F9,
 	HuevoInteractivo_Update_m92D10E5E38743F05CA56687064B571C57D787CC8,
@@ -321,13 +318,10 @@ static Il2CppMethodPointer s_methodPointers[302] =
 	Interaction_OnPointerClick_mF94FDF6560F6175B42E2EEBC147A9E856010E065,
 	Interaction__ctor_mAA056B1A5909FD56D69AF98AC67AC0F72E10F50E,
 	MenuManager_Start_m58062825AA9A256E42311B4A4833E7425589BBDF,
-	MenuManager_CerrarPaneles_m937339DA16640DDD54D8026A1CC1B802F07E4BC1,
-	MenuManager_MostrarMenuPrincipal_m956EFF9E7D890E172C24C58938C24C4F528EFB07,
 	MenuManager_Jugar_m517285D898868D29DE2E6914073D6EA379E4B961,
 	MenuManager_CerrarTutorial_m9EFB0E08743B4B538160FDBFF8F0BD1B06261D37,
-	MenuManager_AbrirAjustes_m4A9851038CDC0FD8E8179FE0B8E6060F1FE0C6D4,
 	MenuManager_AbrirCreditos_mA8CDD48B314FF92D30AD6532E1CFC46CBCC78044,
-	MenuManager_CambiarVolumen_m634CD140A79C3B4D05BE1BF8A110242E29FD22DB,
+	MenuManager_VolverMenu_m76955AB11A2E1633EA5FF5F96B5DD21F95EAC7DB,
 	MenuManager_Salir_m58A7C2A6FEE253CCDB470D478B6EAD1A7C889B7B,
 	MenuManager__ctor_m07A22DFDD90E3164393F8BDE06DAEF5AFA786CF2,
 	PausarSistemaSolar_Awake_m7BC520AF4DE02414BEC8468D279F7B9AC1CC601D,
@@ -614,7 +608,7 @@ static Il2CppMethodPointer s_methodPointers[302] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[302] = 
+static const int32_t s_InvokerIndices[299] = 
 {
 	15834,
 	15834,
@@ -630,9 +624,6 @@ static const int32_t s_InvokerIndices[302] =
 	15834,
 	15834,
 	15834,
-	15834,
-	15834,
-	12100,
 	15834,
 	15834,
 	15834,
@@ -664,9 +655,9 @@ static const int32_t s_InvokerIndices[302] =
 	15605,
 	15834,
 	15834,
-	26968,
+	26970,
 	15834,
-	27106,
+	27108,
 	15834,
 	2499,
 	15834,
@@ -827,7 +818,7 @@ static const int32_t s_InvokerIndices[302] =
 	15605,
 	15605,
 	15834,
-	27069,
+	27071,
 	11936,
 	15834,
 	15398,
@@ -923,7 +914,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	302,
+	299,
 	s_methodPointers,
 	0,
 	NULL,
