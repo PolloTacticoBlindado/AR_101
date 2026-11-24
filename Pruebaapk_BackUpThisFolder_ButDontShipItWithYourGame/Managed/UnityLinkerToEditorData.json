@@ -58,7 +58,9 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Proyecto final.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -78,8 +80,18 @@
           },
           {
             "name": "AudioResource",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/Proyecto final.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioSource",
+            "scenes": [
+              "Assets/Scenes/Proyecto final.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -1390,6 +1402,12 @@
             "scenes": [
               "Assets/Scenes/Proyecto final.unity"
             ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "TextMesh",
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
