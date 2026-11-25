@@ -1,9 +1,15 @@
+
 using UnityEngine;
 
 public class HuevoInteractivo : MonoBehaviour
 {
     public GameObject obra;
     public Camera arCamera;
+
+    [Header("Sonidos")]
+    public AudioSource audioSource;
+    public AudioClip sonidoGolpe;
+    public AudioClip sonidoApertura;
 
     public int golpesNecesarios = 3;
 
@@ -58,6 +64,21 @@ public class HuevoInteractivo : MonoBehaviour
                 mensaje = "Golpes: " + golpes;
 
                 Debug.Log(mensaje);
+
+                // Reproducir el sonido correspondiente
+                if (audioSource != null)
+                {
+                    if (golpes < golpesNecesarios)
+                    {
+                        if (sonidoGolpe != null)
+                            audioSource.PlayOneShot(sonidoGolpe);
+                    }
+                    else
+                    {
+                        if (sonidoApertura != null)
+                            audioSource.PlayOneShot(sonidoApertura);
+                    }
+                }
 
                 CancelInvoke(nameof(RestaurarEscala));
 
